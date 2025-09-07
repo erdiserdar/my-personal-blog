@@ -1,0 +1,239 @@
+/* --- Header --- */
+header {
+    background: #fff;
+    padding: 15px 0;
+    border-bottom: 1px solid #e9ecef;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.04);
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #212529;
+    text-decoration: none;
+}
+
+header nav a {
+    margin-left: 20px;
+}
+
+/* A general style for the main title on each page */
+.page-title {
+    margin-bottom: 30px;
+    text-align: center;
+    color: #212529;
+}
+.static-page-content {
+    background: #fff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.cta-button-container {
+    margin-top: 30px;
+}
+
+/* --- Blog Page --- */
+.category-nav {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 40px;
+}
+
+.category-nav a {
+    text-decoration: none;
+    color: #495057;
+    padding: 8px 16px;
+    border-radius: 20px;
+    background: #e9ecef;
+    transition: all 0.2s ease;
+}
+
+.category-nav a:hover {
+    background: #ced4da;
+}
+
+.category-nav a.active {
+    background: #007bff;
+    color: #fff;
+    font-weight: bold;
+}
+
+.post-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 30px;
+}
+
+.post-card {
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    display: flex;
+    flex-direction: column;
+}
+
+.post-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 15px rgba(0,0,0,0.1);
+}
+
+.card-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 20px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-category {
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: #007bff;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.card-title {
+    font-size: 1.4rem;
+    margin: 0 0 10px 0;
+    color: #212529;
+}
+
+.card-meta {
+    font-size: 0.85rem;
+    color: #6c757d;
+    margin-bottom: 15px;
+}
+
+.card-excerpt {
+    color: #495057;
+    flex-grow: 1; /* Pushes the read more link to the bottom */
+    margin-bottom: 20px;
+}
+
+.read-more {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+    align-self: flex-start;
+}
+
+.read-more:hover {
+    text-decoration: underline;
+}
+
+/* --- Single Post Page --- */
+.single-post-content {
+    background: #fff;
+    padding: 30px 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+.single-post-content h1 {
+    margin-top: 0;
+}
+.post-meta {
+    color: #6c757d;
+    margin-bottom: 20px;
+    font-style: italic;
+}
+.post-body {
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+/* --- Admin & Forms --- */
+.post-form {
+    max-width: 800px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input[type="text"],
+.form-group input[type="password"],
+.form-group textarea,
+.form-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    background: #007bff;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+}
+.cta-button {
+    padding: 15px 30px;
+    font-size: 1.2rem;
+}
+
+.delete-btn {
+    background: #dc3545;
+}
+
+.button:hover, .delete-btn:hover {
+    opacity: 0.9;
+}
+
+.message {
+    padding: 15px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    background: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+.message.error {
+    background: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
+
+/* --- Footer --- */
+footer.main-footer {
+    text-align: center;
+    margin-top: 40px;
+    padding: 20px;
+    background: #343a40;
+    color: #f8f9fa;
+}
