@@ -37,6 +37,23 @@ header nav a {
     text-align: center;
 }
 
+.about-photo {
+    border-radius: 50%;
+    margin-bottom: 20px;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.static-page-content .about-content p {
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    line-height: 1.7;
+}
+
 .cta-button-container {
     margin-top: 30px;
 }

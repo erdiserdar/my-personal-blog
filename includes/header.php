@@ -24,7 +24,7 @@ if (session_status() === PHP_SESSION_NONE) {
             <nav>
                 <a href="<?php echo $css_path_prefix; ?>index.php">Home</a>
                 <a href="<?php echo $css_path_prefix; ?>blog.php">Blog</a>
-                <a href="#">About Me</a> <!-- This still doesn't lead anywhere, we can build it later -->
+                <a href="<?php echo $css_path_prefix; ?>about.php">About Me</a>
                 
                 <?php if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] === true): ?>
                     <!-- If logged in, show Manage Posts and Logout -->
